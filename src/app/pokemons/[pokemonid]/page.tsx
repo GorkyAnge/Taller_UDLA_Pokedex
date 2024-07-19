@@ -35,7 +35,7 @@ const PokemonDetailsPage = () => {
   if (!pokemonDetails) return <div>Loading...</div>;
 
   return (
-    <>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
         <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-[#98002E] shadow-[#98002E]/40">
           <div className="flex justify-center items-center w-full h-full">
@@ -54,8 +54,8 @@ const PokemonDetailsPage = () => {
           <p className="mt-2">Peso: {pokemonDetails.weight}</p>
           <h6 className="text-xl mb-2">Tipos:</h6>
           {pokemonDetails.types.map((typeInfo, index) => (
-              <p key={index}>{typeInfo.type.name}</p>
-            ))}
+            <p key={index}>{typeInfo.type.name}</p>
+          ))}
         </div>
         <div className="p-6 pt-0">
           <button
@@ -67,7 +67,7 @@ const PokemonDetailsPage = () => {
           </button>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 
