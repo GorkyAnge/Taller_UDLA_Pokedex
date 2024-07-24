@@ -5,7 +5,7 @@ import SearchBar from '../components/SearchBar';
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <main className="flex items-center justify-center h-screen">
       <div className="mx-auto max-w-xl text-center">
         <img
           src='https://media.primicias.ec/2020/01/30112906/UDLA_Logo-transparente.png'
@@ -27,7 +27,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
